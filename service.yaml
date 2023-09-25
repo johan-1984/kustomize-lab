@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: service
+metadata:
+  name: k-test
+spec:
+  selector:
+    app: k-test
+  ports:
+  - port: 8080
+    protocol: TCP
+    targetPort: 8080
+  
